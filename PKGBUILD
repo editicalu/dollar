@@ -3,9 +3,9 @@
 pkgname=dollar
 pkgver=1
 pkgrel=1
-pkgdesc="Select the ideal NordVPN server"
+pkgdesc="Omit the $ from commands"
 arch=('any')
-url="https://github.com/editicalu/nordselect"
+url="https://github.com/editicalu/dollar"
 license=('custom:unlicense')
 conflicts=('dollar-sign')
 
