@@ -1,5 +1,5 @@
-#!/bin/bash
-VERSION=1
+#!/bin/sh
+VERSION=2
 
 if [[ $@ < 2 ]]
 then
@@ -7,7 +7,5 @@ then
 	echo ""
 	echo "Usage: $ COMMAND [ARGS..]"
 else
-	command=$1
-	shift
-	$command $*
+	exec "$@"
 fi

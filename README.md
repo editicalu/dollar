@@ -1,8 +1,8 @@
 # $
 
-A lot of tutorial websites use `$` to indicate that a line of code should be executed at the terminal. However, the lazy folks just copy the whole line, only to be greeted with `$: command not found`.
+A lot of tutorial websites use `$` to indicate that a line of code should be executed at the terminal as a normal user. However, the lazy folks just copy the whole line, only to be greeted with `$: command not found`. While you could just delete the dollar symbol and run the command again, that's sooooo inefficient.
 
-This script is a simple hack to allow this dollar to be ignored.
+This script is a simple hack to ignore the dollar symbol and run the rest of the command as usual.
 
 # Installation
 
@@ -15,14 +15,13 @@ Use the included PKGBUILD or install [`dollar`](https://aur.archlinux.org/packag
 To install, run the following command:
 
 ```bash
-# Or /sbin or /usr/bin
-cp \$.sh /bin/\$
+cp \$.sh /usr/bin/\$
 ```
 
 To uninstall the program:
 
 ```bash
-rm `whereis \$`
+rm /usr/bin/\$
 ```
 
 Both command might require root access.
