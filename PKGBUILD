@@ -1,7 +1,7 @@
 # Maintainer: Ward Segers <w@rdsegers.be>
 
 pkgname=dollar
-pkgver=2
+pkgver=3
 pkgrel=1
 pkgdesc="Omit the $ from commands"
 arch=('any')

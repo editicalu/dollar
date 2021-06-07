@@ -1,5 +1,5 @@
 #!/bin/sh
-VERSION=2
+VERSION=3
 
 if [[ $@ < 2 ]]
 then
