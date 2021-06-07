@@ -1,11 +1,12 @@
 #!/bin/sh
 VERSION=3
 
-if [[ $@ < 2 ]]
-then
+if [ -z "$1" ]; then
 	echo "$ version ${VERSION}"
-	echo ""
+	echo
 	echo "Usage: $ COMMAND [ARGS..]"
+
+	# printf "$ version %s\n\nUsage: $ COMMAND [ARGS...]\n" "$VERSION"
 else
 	exec "$@"
 fi
